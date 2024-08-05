@@ -1,0 +1,220 @@
+html {
+  font-family: "Poppins", Sans-Serif;
+  scroll-behavior: smooth;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.tabel1,
+.tabel2 {
+  border-collapse: collapse;
+  padding: 4px;
+  border: 2px solid black;
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+.tabel1 thead tr th {
+  font-size: 15px;
+}
+.tabel1 tbody tr td {
+  font-size: 13px;
+}
+.bold {
+  font-weight: 700;
+}
+#s {
+  width: 60%;
+}
+.tabel2 {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #1ef2ff;
+  border: 0;
+}
+.tabel2 tr th {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  border-style: none;
+  border: 0;
+}
+.tabel2 tr td {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  border-style: none;
+  border: 0;
+}
+#s tr th {
+  border: 3px solid white;
+}
+.head {
+  font-size: 10px;
+}
+.head1 {
+  font-size: 18px;
+  padding: 8px;
+}
+.head2 {
+  font-size: 15px;
+}
+.box {
+  width: 7%;
+}
+.box2 {
+  width: 14.2%;
+}
+th,
+td,
+tr {
+  padding: 4px;
+}
+th,
+td {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+}
+.line-top {
+  border-top: 2px solid;
+}
+.text-left {
+  text-align: left;
+}
+.warna1 {
+  background-color: #1e90ff;
+  font-size: 20px;
+}
+.warna2 {
+  font-size: 20px;
+  padding: 10px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+p {
+  font-size: 15px;
+}
+h1 {
+  text-align: center;
+}
+#jumlahRataRataSemester {
+  background-color: #1e90ff;
+  font-size: 18px;
+}
+.tabel1 tbody tr:nth-child(even) {
+  background-color: #1ef2ff;
+}
+input {
+  width: 30px;
+}
+label,
+input {
+  margin: 5px;
+}
+.button1 {
+  font-family: "Poppins", Sans-Serif;
+  background-color: #1e90ff;
+  color: white;
+  margin: 5px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 5%;
+  border: 2px solid #1e90ff;
+}
+.button1:hover {
+  color: #1e90ff;
+  background-color: white;
+}
+.button2 {
+  font-family: "Poppins", Sans-Serif;
+  background-color: #1e90ff;
+  color: white;
+  margin: 5px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 21%;
+  border: 2px solid #1e90ff;
+}
+.button2:hover {
+  color: #1e90ff;
+  background-color: white;
+}
+li {
+  margin-bottom: 8px;
+}
+span {
+  color: blue;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  text-decoration: none;
+  color: blue;
+}
+.footer:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  html {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .tabel1,
+  .tabel2,
+  #s {
+    width: 80%;
+  }
+   .head1 {
+    font-size: 15px;
+  }
+  .tabel1 thead tr th {
+    font-size: 13px;
+  }
+  .tabel1 tbody tr td {
+    font-size: 11px;
+  }
+  .head2 {
+  font-size: 13px;
+}
+  #jumlahRataRataSemester {
+  font-size: 15px;
+  }
+  tr {
+    font-size: 10px;
+  }
+  .warna1 {
+    font-size: 7px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .button1 {
+    width: 10%;
+  }
+  .button2 {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+  .tabel1,
+  .tabel2,
+  #s {
+    width: 100%;
+  }
+}

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#1e90ff" />
+    <link rel="icon" href="../../image/image-main/icon.png" />
+    <title>RATA-RATA NILAI SEMESTER I - V</title>
+    <meta name="title" content="RATA-RATA NILAI SEMESTER I - V" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CGKTDTK7Y7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CGKTDTK7Y7");
+    </script>
+  </head>
+  <body>
+    <h1>
+      RATA-RATA NILAI<br />
+      SEMESTER I - V
+    </h1>
+    <br />
+    <h3>A. Ketentuan Pengisian Nilai</h3>
+    <ul>
+      <li>Website Rata-Rata Nilai ini terkhusus untuk siswa kelas MIPA.</li>
+      <li>
+        Masukkan/input nilai semua Mata Pelajaran dari Semester I - V, khusus
+        untuk Semester I dan II diisi nilai Pengetahuan.
+      </li>
+      <li>
+        Lalu tekan tombol SIMPAN, maka hasil akan otomatis muncul di bawah.
+      </li>
+      <li>
+        Jika terdapat kolom pada tabel yang bernilai NaN (Not a Number), maka
+        terdapat kolom input nilai yang belum terisi.
+      </li>
+      <li>
+        <span>Data nilai terenkripsi secara end-to-end</span>. Jadi tetap berada
+        di halaman ini, karena jika halaman ini di refresh maka nilai yang telah
+        di input akan hilang.
+      </li>
+    </ul>
+    <br />
+    <h3>B. Input Nilai Setiap Mata Pelajaran</h3>
+
+    <table class="tabel1" id="s">
+      <tr class="warna1">
+        <th colspan="5" class="head1">PILIH SEMESTER</th>
+      </tr>
+      <tr class="line-top">
+        <th class="head1 , box2" id="show-s1"><a href="#s">I</a></th>
+        <th class="head1 , box2" id="show-s2"><a href="#s">II</a></th>
+        <th class="head1 , box2" id="show-s3"><a href="#s">III</a></th>
+        <th class="head1 , box2" id="show-s4"><a href="#s">IV</a></th>
+        <th class="head1 , box2" id="show-s5"><a href="#s">V</a></th>
+      </tr>
+    </table>
+    <br />
+    <form>
+      <!-- SEMESTER I -->
+      <div id="s1">
+        <table class="tabel2">
+          <tr>
+            <th colspan="3" class="warna2">Semester I</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="pai1">Pendidikan Agama Islam dan Budi Pekerti</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pai1" name="pai1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ppkn1"
+                >Pendidikan Pancasila dan Kewarganegaraan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="ppkn1" name="ppkn1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bind1">Bahasa Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bind1" name="bind1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkw1">Matematika Wajib</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkw1" name="mtkw1" d />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sjr1">Sejarah Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="sjr1" name="sjr1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bing1">Bahasa Inggris</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bing1" name="bing1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snb1">Seni Budaya</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="snb1" name="snb1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pjok1"
+                >Pendidikan Jasmani, Olahraga, dan Kesehatan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pjok1" name="pjok1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pkwu1">Prakarya dan Kewirausahaan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pkwu1" name="pkwu1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkp1">Matematika Peminatan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkp1" name="mtkp1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bio1">Biologi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bio1" name="bio1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fis1">Fisika</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="fis1" name="fis1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kim1">Kimia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="kim1" name="kim1" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eko1">Ekonomi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="eko1" name="eko1" />
+            </td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <!-- SEMESTER II -->
+      <div id="s2">
+        <table class="tabel2">
+          <tr>
+            <th colspan="3" class="warna2">Semester II</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="pai2">Pendidikan Agama Islam dan Budi Pekerti</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pai2" name="pai2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ppkn2"
+                >Pendidikan Pancasila dan Kewarganegaraan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="ppkn2" name="ppkn2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bind2">Bahasa Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bind2" name="bind2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkw2">Matematika Wajib</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkw2" name="mtkw2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sjr2">Sejarah Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="sjr2" name="sjr2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bing2">Bahasa Inggris</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bing2" name="bing2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snb2">Seni Budaya</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="snb2" name="snb2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pjok2"
+                >Pendidikan Jasmani, Olahraga, dan Kesehatan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pjok2" name="pjok2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pkwu2">Prakarya dan Kewirausahaan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pkwu2" name="pkwu2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkp2">Matematika Peminatan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkp2" name="mtkp2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bio2">Biologi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bio2" name="bio2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fis2">Fisika</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="fis2" name="fis2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kim2">Kimia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="kim2" name="kim2" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eko2">Ekonomi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="eko2" name="eko2" />
+            </td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <!-- SEMESTER III -->
+      <div id="s3">
+        <table class="tabel2">
+          <tr>
+            <th colspan="3" class="warna2">Semester III</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="pai3">Pendidikan Agama Islam dan Budi Pekerti</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pai3" name="pai3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ppkn3"
+                >Pendidikan Pancasila dan Kewarganegaraan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="ppkn3" name="ppkn3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bind3">Bahasa Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bind3" name="bind3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkw3">Matematika Wajib</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkw3" name="mtkw3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sjr3">Sejarah Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="sjr3" name="sjr3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bing3">Bahasa Inggris</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bing3" name="bing3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snb3">Seni Budaya</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="snb3" name="snb3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pjok3"
+                >Pendidikan Jasmani, Olahraga, dan Kesehatan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pjok3" name="pjok3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pkwu3">Prakarya dan Kewirausahaan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pkwu3" name="pkwu3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkp3">Matematika Peminatan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkp3" name="mtkp3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bio3">Biologi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bio3" name="bio3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fis3">Fisika</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="fis3" name="fis3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kim3">Kimia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="kim3" name="kim3" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eko3">Ekonomi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="eko3" name="eko3" />
+            </td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <!-- SEMESTER IV -->
+      <div id="s4">
+        <table class="tabel2">
+          <tr>
+            <th colspan="3" class="warna2">Semester IV</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="pai4">Pendidikan Agama Islam dan Budi Pekerti</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pai4" name="pai4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ppkn4"
+                >Pendidikan Pancasila dan Kewarganegaraan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="ppkn4" name="ppkn4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bind4">Bahasa Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bind4" name="bind4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkw4">Matematika Wajib</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkw4" name="mtkw4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sjr4">Sejarah Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="sjr4" name="sjr4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bing4">Bahasa Inggris</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bing4" name="bing4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snb4">Seni Budaya</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="snb4" name="snb4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pjok4"
+                >Pendidikan Jasmani, Olahraga, dan Kesehatan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pjok4" name="pjok4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pkwu4">Prakarya dan Kewirausahaan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pkwu4" name="pkwu4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkp4">Matematika Peminatan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkp4" name="mtkp4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bio4">Biologi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bio4" name="bio4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fis4">Fisika</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="fis4" name="fis4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kim4">Kimia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="kim4" name="kim4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eko4">Ekonomi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="eko4" name="eko4" />
+            </td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <!-- SEMESTER V -->
+      <div id="s5">
+        <table class="tabel2">
+          <tr>
+            <th colspan="3" class="warna2">Semester V</th>
+          </tr>
+          <tr>
+            <td>
+              <label for="pai5">Pendidikan Agama Islam dan Budi Pekerti</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pai5" name="pai5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ppkn5"
+                >Pendidikan Pancasila dan Kewarganegaraan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="ppkn5" name="ppkn5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bind5">Bahasa Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bind5" name="bind5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkw5">Matematika Wajib</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkw5" name="mtkw5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sjr5">Sejarah Indonesia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="sjr5" name="sjr5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bing5">Bahasa Inggris</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bing5" name="bing5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="snb5">Seni Budaya</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="snb5" name="snb5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pjok5"
+                >Pendidikan Jasmani, Olahraga, dan Kesehatan</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pjok5" name="pjok5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pkwu5">Prakarya dan Kewirausahaan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="pkwu5" name="pkwu5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mtkp5">Matematika Peminatan</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="mtkp5" name="mtkp5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="bio5">Biologi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="bio5" name="bio5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="fis5">Fisika</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="fis5" name="fis5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="kim5">Kimia</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="kim5" name="kim5" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eko5">Ekonomi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="number" id="eko5" name="eko5" />
+            </td>
+          </tr>
+        </table>
+        <br />
+      </div>
+
+      <center>
+        <button class="button2" type="button" onclick="simpanNilai()">
+          SIMPAN
+        </button>
+        <button class="button2" type="button" onclick="ubahNilai()">
+          UBAH
+        </button>
+
+        <a href="#s"><button class="button1" type="button">^</button></a>
+
+        <p style="font-size: 12px">
+          Catatan : Isi semua nilai Semester I - V terlebih dahulu lalu tekan
+          tombol SIMPAN.
+        </p>
+      </center>
+    </form>
+    <br />
+    <div id="hasil">
+      <h3>C. Hasil Rata-Rata Nilai</h3>
+
+      <table class="tabel1">
+        <thead>
+          <tr class="warna1">
+            <th class="head , box" rowspan="2">NO</th>
+            <th class="head" rowspan="2">MATA PELAJARAN</th>
+            <th class="head" colspan="5">NILAI / SEMESTER</th>
+          </tr>
+          <tr class="warna1 , line-top">
+            <th class="head , box">I</th>
+            <th class="head , box">II</th>
+            <th class="head , box">III</th>
+            <th class="head , box">IV</th>
+            <th class="head , box">V</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="line-top">
+            <td>1</td>
+            <td class="text-left">Pendidikan Agama Islam dan Budi Pekerti</td>
+            <td id="pai-s1"></td>
+            <td id="pai-s2"></td>
+            <td id="pai-s3"></td>
+            <td id="pai-s4"></td>
+            <td id="pai-s5"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="text-left">Pendidikan Pancasila dan Kewarganegaraan</td>
+            <td id="ppkn-s1"></td>
+            <td id="ppkn-s2"></td>
+            <td id="ppkn-s3"></td>
+            <td id="ppkn-s4"></td>
+            <td id="ppkn-s5"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="text-left">Bahasa Indonesia</td>
+            <td id="bind-s1"></td>
+            <td id="bind-s2"></td>
+            <td id="bind-s3"></td>
+            <td id="bind-s4"></td>
+            <td id="bind-s5"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="text-left">Matematika Wajib</td>
+            <td id="mtkw-s1"></td>
+            <td id="mtkw-s2"></td>
+            <td id="mtkw-s3"></td>
+            <td id="mtkw-s4"></td>
+            <td id="mtkw-s5"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="text-left">Sejarah Indonesia</td>
+            <td id="sjr-s1"></td>
+            <td id="sjr-s2"></td>
+            <td id="sjr-s3"></td>
+            <td id="sjr-s4"></td>
+            <td id="sjr-s5"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td class="text-left">Bahasa Inggris</td>
+            <td id="bing-s1"></td>
+            <td id="bing-s2"></td>
+            <td id="bing-s3"></td>
+            <td id="bing-s4"></td>
+            <td id="bing-s5"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td class="text-left">Seni Budaya</td>
+            <td id="snb-s1"></td>
+            <td id="snb-s2"></td>
+            <td id="snb-s3"></td>
+            <td id="snb-s4"></td>
+            <td id="snb-s5"></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td class="text-left">
+              Pendidikan Jasmani, Olahraga, dan Kesehatan
+            </td>
+            <td id="pjok-s1"></td>
+            <td id="pjok-s2"></td>
+            <td id="pjok-s3"></td>
+            <td id="pjok-s4"></td>
+            <td id="pjok-s5"></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td class="text-left">Prakarya dan Kewirausahaan</td>
+            <td id="pkwu-s1"></td>
+            <td id="pkwu-s2"></td>
+            <td id="pkwu-s3"></td>
+            <td id="pkwu-s4"></td>
+            <td id="pkwu-s5"></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td class="text-left">Matematika Peminatan</td>
+            <td id="mtkp-s1"></td>
+            <td id="mtkp-s2"></td>
+            <td id="mtkp-s3"></td>
+            <td id="mtkp-s4"></td>
+            <td id="mtkp-s5"></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td class="text-left">Biologi</td>
+            <td id="bio-s1"></td>
+            <td id="bio-s2"></td>
+            <td id="bio-s3"></td>
+            <td id="bio-s4"></td>
+            <td id="bio-s5"></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td class="text-left">Fisika</td>
+            <td id="fis-s1"></td>
+            <td id="fis-s2"></td>
+            <td id="fis-s3"></td>
+            <td id="fis-s4"></td>
+            <td id="fis-s5"></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td class="text-left">Kimia</td>
+            <td id="kim-s1"></td>
+            <td id="kim-s2"></td>
+            <td id="kim-s3"></td>
+            <td id="kim-s4"></td>
+            <td id="kim-s5"></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td class="text-left">Ekonomi</td>
+            <td id="eko-s1"></td>
+            <td id="eko-s2"></td>
+            <td id="eko-s3"></td>
+            <td id="eko-s4"></td>
+            <td id="eko-s5"></td>
+          </tr>
+          <tr class="line-top" style="background : #1e90ff">
+            <th colspan="2" rowspan="2" class="head2">RATA-RATA</th>
+            <td id="rataRataSemester1" class="bold"></td>
+            <td id="rataRataSemester2" class="bold"></td>
+            <td id="rataRataSemester3" class="bold"></td>
+            <td id="rataRataSemester4" class="bold"></td>
+            <td id="rataRataSemester5" class="bold"></td>
+            
+          </tr>
+          <tr class="line-top">
+            <th id="jumlahRataRataSemester" colspan="5"></th>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+    </div>
+
+    <footer>
+      <p>
+        Butuh bantuan? Hubungi Developer
+        <a href="https://wa.me/6287873520868" class="footer">di sini</a>.
+      </p>
+      <p>Copyright © 2024 Yaya Project</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
